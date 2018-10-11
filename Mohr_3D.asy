@@ -26,7 +26,12 @@ real t_yz = 150;
 
 //Inputs end
 
+
+
+
 // Stress Invariants
+//https://en.wikiversity.org/wiki/Introduction_to_Elasticity/Principal_stresses
+
 real I_1 = s_x+s_y+s_z;
 real I_2 = s_x*s_y+s_y*s_z+s_z*s_x-t_xy**2-t_xz**2-t_yz**2;
 real I_3=(s_x*s_y*s_z)-s_x*t_yz**2-s_y*t_xz**2-s_z*t_xy**2+(2*t_xy*t_xz*t_yz);
